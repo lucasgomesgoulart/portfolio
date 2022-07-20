@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Goulart Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="welcome">
+
+                <div class="welcome-container">
+                    <div class="welcome-textos">
+                        <h1 class="animate__animated animate__bounceInDown">Hi, it's me <span>Lucas!</span></h1>
+
+                        <h2 class="animate__animated animate__bounceInDown">Welcome to my <span>portfolio.</span></h2>
+
+                        <p class="animate__animated animate__bounceInLeft">I'am an <span>independent creative developer
+                            </span> from Florianópolis, Santa Catarina.</p>
+                    </div>
+                    <div class="links">
+                        <a id="link" class="animate__animated animate__bounceInUp" target="_blank" href="https://www.linkedin.com/in/lucasgomesgoulart/">Linkedin</a>
+                        <a id="link" class="animate__animated animate__bounceInDown" target="_blank" href="https://github.com/lucasgomesgoulart">GitHub</a>
+                    </div>
+                </div>
+                <div class="imgWelcome">
+                    <img src="img/kisspng-programmer-computer-programming-laptop-professiona-architectural-engineer-vector-material-5ad9edb20c2c80.8903493415242316020499.png"
+                        alt="" class="animate__animated animate__bounceInRight">
+                </div>
+            </div>
+        </section>
+        <section id="about-me">
+            <div class="aboutMe">
+                <div class="text-about-me">
+                    <h2>About Me:</h2>
+                    <p>Me chamo Lucas, tenho 25 anos e atualmente sou aluno do SENAI-Florianópolis. Cursando Análise e
+                        Desenvolvimento de Sistemas (2ºfase).<br>Sempre fui ligado a tecnologia, desde pequeno arrumava
+                        meu próprio computador, com peças usadas e vendo tutoriais na internet.<br> Meu primeiro contato
+                        com a programação foi em 2017/2018 onde realizei o mesmo curso no SENAI, não consegui terminar,
+                        por conta de alguns problemas, porém em 03/2022 decidi voltar a estudar, desde então, mantenho o
+                        foco e estudo diariamente, em busca dos meus objetivos.</p>
+                </div>
+                <div class="aboutMe-img">
+                    <img src="img/me.JPG">
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>CRUD in LocalStorage</h3>
+                    <h4>IGNITE EVENTOS</h4>
+                    <a target="_blank" href="https://lucasgomesgoulart.github.io/Ignite-Eventos/index.html"><img
+                            src="img/crud1.jpeg" alt="crud"></a>
+                </div>
+                <div class="project">
+                    <h3>LandingPage</h3>
+                    <h4>IBRIDGE</h4>
+                    <a target="_blank" href="https://lucasgomesgoulart.github.io/Ibridge---job-test/"><img
+                            src="img/landingPage1.JPG" alt=""></a>
+                </div>
+                <div class="project">
+                    <p>Em breve...</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <hr>
+            <div class="contact">
+                <h2>Contact me</h2>
+                <div class="formulario">
+                    <form action="https://api.staticforms.xyz/submit" method="POST">
+                        <input class="input"type="hidden" name="accessKey" value="601eca99-32a0-456e-8494-6c06df6c5850">
+                        <input class="input"type="hidden" name="redirectTo" value="http://127.0.0.1:5500/portfolio2/index.html#">
+                        <!-- <label for="inputNome">Primeiro nome:</label> -->
+                        <input class="input"type="text" placeholder="Name"id="inputNome" name="name" required maxlength="25" minlength="2">
+                        <span></span>
+
+                        <!-- <label for="inputEmail">Email</label> -->
+                        <input class="input"type="text" placeholder="Email"id="inputEmail" name="email" required maxlength="50">
+                        <span></span>
+
+                        <!-- <label for="textAreaMensagem">Mensagem:</label> -->
+                        <textarea name="message" id="textAreaMensagem" required maxlength="150" placeholder="Your Message"></textarea>
+                        <span></span>
+                        <button>Enviar mensagem</button>
+                        <p>If you prefer, <a href="https://wa.me/5548984849980?text=Oi+Lucas%2C+estou+entrando+em+contato+com+voc%C3%AA%2C+atrav%C3%A9s+do+seu+portfolio">send me a message on whatsapp</a> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

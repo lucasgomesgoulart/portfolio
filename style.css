@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    padding: 0 80px;
+    list-style: none;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+header .menu ul li a:hover {
+    color: crimson;
+    font-weight: 700;
+}
+
+.welcome {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    width: 1080px;
+}
+
+.welcome-textos {
+    padding-top: 200px;
+}
+
+.welcome-container h1 {
+    font-size: 90px;
+    padding: 0 100px;
+}
+
+.welcome-container h2 {
+    font-size: 40px;
+    padding: 0 100px;
+}
+
+.welcome-container p {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 100px;
+}
+
+.welcome-container span {
+    color: crimson;
+}
+
+.imgWelcome img {
+    width: 80%;
+    padding-top: 100px;
+}
+
+.links{
+    display: flex;
+}
+
+#link{
+    text-decoration: none;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    height: 50px;
+    color: #fff;
+    background: crimson;
+    cursor: pointer;
+    transition: background .5s;
+    text-transform: uppercase;
+}
+
+#link:hover{
+    color: crimson;
+    border: 1px solid crimson;
+    background: #fff;
+}
+
+/* ABOUT ME */
+
+.aboutMe {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.text-about-me h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 33px;
+    margin-top: 90px;
+}
+
+.text-about-me p {
+    /* background: red; */
+    font-size: 22px;
+    width: 1100px;
+    font-style: oblique;
+    text-align: justify;
+    padding-left: 35px;
+    margin-top: 30px;
+}
+
+
+.aboutMe-img img {
+    width: 500px;
+    border-radius: 1200px;
+    margin-left: 150px;
+}
+
+/* PROJECTS */
+
+.projects {
+    width: 100%;
+    height: 100vh;
+}
+
+.projects h2 {
+    position: absolute;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 33px;
+}
+
+.projects {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.project {
+    width: 400px;
+    display: flex;
+    margin: 70px;
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 5px 10px 18px #242424;
+}
+
+.project img {
+    width: 400px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.5s ease;
+}
+
+.project p {
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.contact{
+    width: 100%;
+    height: 60vh;
+}
+
+.contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 33px;
+}
+
+.formulario{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.formulario label{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.input{
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 40px;
+    margin-bottom: 1px;
+    background: rgb(15, 15, 15);
+    color: #fff;
+    outline: none;
+    padding-left: 5px;
+
+}
+
+.formulario button{
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: crimson;
+    color: #fff;
+    transition: all .5s;
+}
+
+.formulario button:hover{
+    color: crimson;
+    font-weight: 800;
+    border: 1px solid crimson;
+    background: #fff;
+}
+
+.formulario textarea{
+    height: 80px;
+    padding: 5px;
+    font-size: 14px;
+    font-style: italic;
+    background: rgb(15, 15, 15);
+    color: #fff;
+    resize: none;
+}
+
+.formulario p,a{
+    text-align: center;
+}
+
+@media (max-width: 1125px){
+    .welcome{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgWelcome img{
+        display: flex;
+        width: 40%;
+        margin: auto;
+        
+    }
+
+    .aboutMe{
+        display: grid;
+        height: 100%;
+    }
+
+    .text-about-me p{
+        padding: 10px;
+    }
+
+    .aboutMe-img img{
+        /* width: 40%; */
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+
+    .projects{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    
+    .projects h2 {
+        position: relative;
+    }
+    .project{
+        position: relative;
+        align-items: center;
+    }
+    
+}
+
+
+@media (max-width: 320px){
+    /* header{
+        display: none;
+    } */
+
+    .welcome-container{
+        width: 750px;
+    }
+
+    .welcome{
+        display: flex;
+        flex-direction: column;
+    }
+
+ 
+
+    .welcome-textos h1{
+        display: flex;
+        width: 720px;
+        font-size: 70px;
+        padding: 0 60px;
+    }
+
+    .welcome-textos h2{
+        padding: 0 60px;
+    }
+
+    .welcome-textos p{
+        font-size: 22px;
+        padding: 0 60px;
+        width: 75%;
+        text-align: justify;
+    }
+
+    .imgWelcome{
+        width: 500px;
+        padding: 0 10px;
+    }
+
+    .imgWelcome img{
+        width: 500px;
+    }
+
+    .aboutMe{
+        height: 100vh;
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 750px;
+    }
+
+    .text-about-me{
+        background: red;
+        margin-top: 200px;
+        height: 80vh;
+    }
+    .text-about-me h2{
+        margin-top: 190px;
+        display: flex;;
+        justify-content: center;
+    }
+
+    .text-about-me p{
+        text-align: justify;
+        width: 750px;
+    }
+
+    .aboutMe-img img{
+        margin-bottom: 190px;
+        width: 300px;
+        background: red;
+    }
+}
